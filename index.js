@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded' , ( =>{
+document.addEventListener('DOMContentLoaded' ,  ()=>{
  fetch('data.json')
    .then(response=>{
     if (!response.ok){
@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded' , ( =>{
     return response.json()
    })
    .then(data=>{
-     const userList=document.getElementById('user-list');
-     data.users.foreach(user =>{
-        const listitem=document.createElement('li');
-        listitem.textContent = `${user.name} (${user.email})`
-        userList.appendChild(listitem);
+     const userList=document.getElementById('users-list');
+     data.users.forEach(user =>{
+        const listItem=document.createElement('li');
+        listItem.textContent = `${user.name} (${user.email})`;
+        userList.appendChild(listItem);
 
      }); 
    })
@@ -19,4 +19,4 @@ document.addEventListener('DOMContentLoaded' , ( =>{
     console.error('There has been a problem with your fetch operation:', error)
    });
 
-}));
+});
