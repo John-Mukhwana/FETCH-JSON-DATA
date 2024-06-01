@@ -1,0 +1,31 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #4c554e;
+    background-color: rgb(39, 163, 50);
+    list-style-type: none;
+    margin: 20px 10px 0 10px;
+    align-items: flex-start;
+}
+ li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #80e7f5;
+    background-color: pink;
+    font-size:150%;
+    border-top: 3px solid #80e7f5;
+    box-shadow: 5px 5px 5px #888888;
+}
+strong {
+    background-color: purple;
+    color: white;
+    padding: 0 8px;
+    border-top: 3px solid purple;
+    border-bottom: 3px solid purple;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+  }
