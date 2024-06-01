@@ -5,7 +5,13 @@ body{
     padding: 0;
 }
 #users-list{
+    display: grid;
     border: 1px solid #554c4c;
     background-color: bisque;
     list-style-type: none;
+    margin: 20px 10px 0 10px;
+}
+#users-list li:first-child{
+    padding: 10px;
+    border-bottom: 1px solid #554c4c;
 }
